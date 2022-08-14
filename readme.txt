@@ -19,13 +19,15 @@ mounted onto the MSX computer's motherboard and provides certain functionality. 
 
 This board is known to be installed in the following MSX computers:
 
+ - Sony HB-F1II
+ - Sony HB-F1XD
  - Sony HB-F1XV
  - Sony HB-F1XDJ
  - Sony HB-F1XDmkII
- - Sony HB-F1XD
  - Panasonic FS-A1
  - Panasonic FS-A1mkII
  - Panasonic FS-A1F
+ - Kawai KMC-5000 (Panasonic FS-A1F OEM)
 
 Normally, the board works just fine, but there's a problem with 3 electrolytic capacitors - they leak and damage the board,
 sometimes beyond repair. Fixing the leaked boards is difficult as some components can separate from the corroded solder pads,
@@ -52,7 +54,7 @@ so they remained on the redesigned board.
 During the redesign there appeared a few problems. The 4069UBF chip from Toshiba was used by the original engineers as an amplifier,
 so the board's audio and cassette interface operations were dependent on certain features of that chip. When trying to replace this
 chip with similar ones, for example 74LS04 or 74HCT04, the audio functionality was crippled. The only possible replacement appears
-to be 74HC04 with 68pF capacitor added between pins 10 and 14. See the "74hc04_fix.jpg" image in the Pics folder.
+to be 74HC04 with 68pF capacitor added between pins 3 and 7 (GND). See the "74hc04_fix.jpg" image in the Pics folder.
 
 The optional resistor R35 should not be installed unless the cassette input circuit doesn't work as desired.
 
