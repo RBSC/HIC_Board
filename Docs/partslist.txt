@@ -1,0 +1,77 @@
+Partlist
+
+Assembly variant: 
+
+Part     Value          Device               Package      Library         Sheet
+-------------------------------------------------------------------------------
+C1       1uF            C-EUC1210            C1210        rcl             1
+C2       100pF          C-EUC0805            C0805        rcl             1
+C3       100nF          C-EUC0805            C0805        rcl             1
+C4       100nF          C-EUC0805            C0805        rcl             1
+C5       100nF          C-EUC0805            C0805        rcl             1
+C6       10nF           C-EUC0805            C0805        rcl             1
+C7       47uF           CPOL-EUSMCB          SMC_B        rcl             1
+C8       1.8nF          C-EUC0805            C0805        rcl             1
+C9       10nF           C-EUC0805            C0805        rcl             1
+C10      22nF           C-EUC0805            C0805        rcl             1
+C11      47uF           CPOL-EUSMCB          SMC_B        rcl             1
+C12      10nF           C-EUC0805            C0805        rcl             1
+C13      68pF           C-TRIMMTZ03          CTRIMTZ03    rcl             1
+C14      100nF          C-EUC0805            C0805        rcl             1
+C15      100nF          C-EUC0805            C0805        rcl             1
+C16      100nF          C-EUC0805            C0805        rcl             1
+C17      100nF          C-EUC0805            C0805        rcl             1
+C18      100nF          C-EUC0805            C0805        rcl             1
+C19      100nF          C-EUC0805            C0805        rcl             1
+C20      10nF           C-EUC0805            C0805        rcl             1
+C21      10nF           C-EUC0805            C0805        rcl             1
+C22      100nF          C-EUC0805            C0805        rcl             1
+C23      10uF           CPOL-EUSMCB          SMC_B        rcl             1
+C24      10nF           C-EUC0805            C0805        rcl             1
+IC1      CXA2075        CXA2075              SOP24        CXA2075M        1
+IC2      4069UBF        4069UBF              SO14         Toshiba 4069UBF 1             Alternative: 74HC04 + 68pF capacitor
+IC3      LM358D         LM358D               SO08         linear          1
+IC4      FMW1A          FMW1A                SMT5         fmw1            1
+IC5      FMW1A          FMW1A                SMT5         fmw1            1
+IC6      IMN10A         IMN10A               SMT6         imn10           1
+L1       68uH           LL3225M              L3225M       eagle-ltspice   1
+Q1       2SA1037        BCX71SMD             SOT23        transistor-pnp  1
+Q2       2SC2411k       NPN-TRANSISTOR_SOT23 SOT23        semicon-smd-ipc 1
+R1       470            R-EU_R0805           R0805        rcl             1
+R2       2.7k           R-EU_R0805           R0805        rcl             1
+R3       2.2k           R-EU_R0805           R0805        rcl             1
+R4       470k           R-EU_R0805           R0805        rcl             1
+R5       10k            R-EU_R0805           R0805        rcl             1
+R6       2.2k           R-EU_R0805           R0805        rcl             1
+R7       10k            R-EU_R0805           R0805        rcl             1
+R8       470k           R-EU_R0805           R0805        rcl             1
+R9       4.7k           R-EU_R0805           R0805        rcl             1
+R10      5.1k           R-EU_R0805           R0805        rcl             1
+R11      75             R-EU_R0805           R0805        rcl             1
+R12      75             R-EU_R0805           R0805        rcl             1
+R13      75             R-EU_R0805           R0805        rcl             1
+R14      75             R-EU_R0805           R0805        rcl             1
+R15      75             R-EU_R0805           R0805        rcl             1
+R16      75             R-EU_R0805           R0805        rcl             1
+R17      75             R-EU_R0805           R0805        rcl             1
+R18      1k             R-EU_R0805           R0805        rcl             1
+R19      100k           R-EU_R0805           R0805        rcl             1
+R20      1M             R-EU_R0805           R0805        rcl             1
+R21      220k           R-EU_R0805           R0805        rcl             1
+R22      220k           R-EU_R0805           R0805        rcl             1
+R23      4.7k           R-EU_R0805           R0805        rcl             1
+R24      10k            R-EU_R0805           R0805        rcl             1
+R25      33             R-EU_R0805           R0805        rcl             1
+R26      1k             R-EU_R0805           R0805        rcl             1
+R27      220k           R-EU_R0805           R0805        rcl             1
+R28      1M             R-EU_R0805           R0805        rcl             1
+R29      1M             R-EU_R0805           R0805        rcl             1
+R30      390k           R-EU_R0805           R0805        rcl             1
+R31      820            R-EU_R0805           R0805        rcl             1
+R32      1M             R-EU_R0805           R0805        rcl             1
+R33      1k             R-EU_R0805           R0805        rcl             1
+R34      10k            R-EU_R0805           R0805        rcl             1
+R35      4.7k           R-EU_R0805           R0805        rcl             1             Optional (do not install)
+R36      1k             R-EU_R0805           R0805        rcl             1
+R37      1k             R-EU_R0805           R0805        rcl             1
+R38      1k             R-EU_R0805           R0805        rcl             1
