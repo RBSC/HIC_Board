@@ -1,7 +1,7 @@
 --------------------------------------------------------------------------------
 HIC Board version 1.0
 Copyright (c) 2021-2022 RBSC
-Last updated: 14.08.2022
+Last updated: 16.08.2022
 --------------------------------------------------------------------------------
 
 About
@@ -24,7 +24,6 @@ This board is known to be installed in the following MSX computers:
  - Sony HB-F1XV
  - Sony HB-F1XDJ
  - Sony HB-F1XDmkII
- - Panasonic FS-A1
  - Panasonic FS-A1mkII
  - Panasonic FS-A1F
  - Kawai KMC-5000 (Panasonic FS-A1F OEM)
