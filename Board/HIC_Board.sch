@@ -6,7 +6,7 @@
 <setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
+<grid distance="0.05" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="no" active="no"/>
 <layer number="2" name="Route2" color="1" fill="3" visible="no" active="no"/>
@@ -14796,7 +14796,7 @@ Source: http://www.rohm.com/products/databook/tr/pdf/umx1n.pdf</description>
 <attribute name="MPN" value=""/>
 <attribute name="OC_FARNELL" value="unknown"/>
 </part>
-<part name="C20" library="rcl" deviceset="C-EU" device="C0805" value="10nF">
+<part name="C20" library="rcl" deviceset="C-EU" device="C0805" value="39pF">
 <attribute name="MF" value=""/>
 <attribute name="MPN" value=""/>
 <attribute name="OC_FARNELL" value="unknown"/>
@@ -14939,7 +14939,11 @@ Source: http://www.rohm.com/products/databook/tr/pdf/umx1n.pdf</description>
 <attribute name="OC_FARNELL" value="unknown"/>
 </part>
 <part name="GND16" library="supply1" deviceset="GND" device=""/>
-<part name="GND17" library="supply1" deviceset="GND" device=""/>
+<part name="R39" library="rcl" deviceset="R-EU_" device="R0805" value="220k">
+<attribute name="MF" value=""/>
+<attribute name="MPN" value=""/>
+<attribute name="OC_FARNELL" value="unknown"/>
+</part>
 </parts>
 <sheets>
 <sheet>
@@ -14949,8 +14953,8 @@ Source: http://www.rohm.com/products/databook/tr/pdf/umx1n.pdf</description>
 <text x="49.022" y="-59.817" size="1.6764" layer="97">B</text>
 <text x="60.96" y="-75.565" size="1.6764" layer="97" rot="R180">CSYNC</text>
 <text x="1.27" y="-2.54" size="3.81" layer="104">NTSC HIC board for Sony/Panasonic MSX2/MSX2+ computers</text>
-<text x="1.27" y="-7.62" size="3.556" layer="104">Re-engineering and improvements by RBSC (c) 2021</text>
-<text x="1.27" y="-12.7" size="3.556" layer="104">Version 1.0</text>
+<text x="1.27" y="-7.62" size="3.556" layer="104">Re-engineering and improvements by RBSC (c) 2021-2023</text>
+<text x="1.27" y="-12.7" size="3.556" layer="104">Version 1.2</text>
 <text x="48.26" y="-65.405" size="1.6764" layer="97">SC</text>
 <text x="94.488" y="-46.863" size="1.6764" layer="97">R</text>
 <text x="94.742" y="-57.277" size="1.6764" layer="97">G</text>
@@ -14971,6 +14975,8 @@ Source: http://www.rohm.com/products/databook/tr/pdf/umx1n.pdf</description>
 <text x="143.383" y="-175.768" size="1.6764" layer="97">CMRO</text>
 <text x="5.588" y="-146.558" size="1.6764" layer="97">CSI</text>
 <text x="266.7" y="-157.48" size="1.778" layer="95">Optional</text>
+<text x="144.78" y="-66.04" size="1.778" layer="95">For F1XDJ only</text>
+<text x="144.78" y="-68.58" size="1.778" layer="95">Otherwise 0 Ohm</text>
 </plain>
 <instances>
 <instance part="IC1" gate="&gt;NAME" x="76.2" y="-67.945">
@@ -15301,12 +15307,12 @@ Source: http://www.rohm.com/products/databook/tr/pdf/umx1n.pdf</description>
 <attribute name="NAME" x="189.23" y="-22.6314" size="1.778" layer="95"/>
 <attribute name="VALUE" x="189.23" y="-27.432" size="1.778" layer="96"/>
 </instance>
-<instance part="C20" gate="G$1" x="204.47" y="-46.99" smashed="yes">
-<attribute name="OC_FARNELL" x="204.47" y="-46.99" size="1.778" layer="96" rot="R270" display="off"/>
-<attribute name="MF" x="204.47" y="-46.99" size="1.778" layer="96" rot="R270" display="off"/>
-<attribute name="MPN" x="204.47" y="-46.99" size="1.778" layer="96" rot="R270" display="off"/>
-<attribute name="NAME" x="201.549" y="-50.546" size="1.778" layer="95" rot="R90"/>
-<attribute name="VALUE" x="209.169" y="-51.816" size="1.778" layer="96" rot="R90"/>
+<instance part="C20" gate="G$1" x="190.5" y="-54.61" smashed="yes" rot="R90">
+<attribute name="OC_FARNELL" x="190.5" y="-54.61" size="1.778" layer="96" display="off"/>
+<attribute name="MF" x="190.5" y="-54.61" size="1.778" layer="96" display="off"/>
+<attribute name="MPN" x="190.5" y="-54.61" size="1.778" layer="96" display="off"/>
+<attribute name="NAME" x="194.056" y="-57.531" size="1.778" layer="95" rot="R180"/>
+<attribute name="VALUE" x="195.326" y="-49.911" size="1.778" layer="96" rot="R180"/>
 </instance>
 <instance part="R33" gate="G$1" x="240.03" y="-41.91" smashed="yes">
 <attribute name="OC_FARNELL" x="240.03" y="-41.91" size="1.778" layer="96" rot="R180" display="off"/>
@@ -15519,7 +15525,13 @@ Source: http://www.rohm.com/products/databook/tr/pdf/umx1n.pdf</description>
 <attribute name="VALUE" x="27.94" y="-23.622" size="1.778" layer="96"/>
 </instance>
 <instance part="GND16" gate="1" x="38.735" y="-38.735"/>
-<instance part="GND17" gate="1" x="204.47" y="-57.15"/>
+<instance part="R39" gate="G$1" x="157.48" y="-59.69" smashed="yes">
+<attribute name="OC_FARNELL" x="157.48" y="-59.69" size="1.778" layer="96" rot="R180" display="off"/>
+<attribute name="MF" x="157.48" y="-59.69" size="1.778" layer="96" rot="R180" display="off"/>
+<attribute name="MPN" x="157.48" y="-59.69" size="1.778" layer="96" rot="R180" display="off"/>
+<attribute name="NAME" x="153.67" y="-58.1914" size="1.778" layer="95"/>
+<attribute name="VALUE" x="153.67" y="-62.992" size="1.778" layer="96"/>
+</instance>
 </instances>
 <busses>
 </busses>
@@ -15684,11 +15696,6 @@ Source: http://www.rohm.com/products/databook/tr/pdf/umx1n.pdf</description>
 <wire x1="38.735" y1="-34.29" x2="38.735" y2="-36.195" width="0.1524" layer="91"/>
 <junction x="38.735" y="-34.29"/>
 <pinref part="GND16" gate="1" pin="GND"/>
-</segment>
-<segment>
-<pinref part="C20" gate="G$1" pin="2"/>
-<pinref part="GND17" gate="1" pin="GND"/>
-<wire x1="204.47" y1="-54.61" x2="204.47" y2="-52.07" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="+5V" class="0">
@@ -16133,16 +16140,20 @@ Source: http://www.rohm.com/products/databook/tr/pdf/umx1n.pdf</description>
 <pinref part="R20" gate="G$1" pin="2"/>
 <wire x1="170.18" y1="-29.21" x2="175.26" y2="-29.21" width="0.1524" layer="91"/>
 <junction x="175.26" y="-29.21"/>
-<pinref part="RESI" gate="1" pin="P"/>
-<wire x1="142.24" y1="-59.69" x2="175.26" y2="-59.69" width="0.1524" layer="91"/>
 <junction x="175.26" y="-49.53"/>
 <pinref part="IC2" gate="E" pin="I"/>
-<wire x1="175.26" y1="-59.69" x2="175.26" y2="-49.53" width="0.1524" layer="91"/>
+<wire x1="175.26" y1="-59.69" x2="175.26" y2="-54.61" width="0.1524" layer="91"/>
+<wire x1="175.26" y1="-54.61" x2="175.26" y2="-49.53" width="0.1524" layer="91"/>
 <wire x1="175.26" y1="-39.37" x2="180.34" y2="-39.37" width="0.1524" layer="91"/>
 <pinref part="R27" gate="G$1" pin="1"/>
 <wire x1="175.26" y1="-24.13" x2="185.42" y2="-24.13" width="0.1524" layer="91"/>
 <junction x="175.26" y="-24.13"/>
 <label x="142.24" y="-61.595" size="1.778" layer="95"/>
+<pinref part="C20" gate="G$1" pin="1"/>
+<wire x1="175.26" y1="-54.61" x2="187.96" y2="-54.61" width="0.1524" layer="91"/>
+<junction x="175.26" y="-54.61"/>
+<pinref part="R39" gate="G$1" pin="2"/>
+<wire x1="162.56" y1="-59.69" x2="175.26" y2="-59.69" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$43" class="0">
@@ -16155,8 +16166,9 @@ Source: http://www.rohm.com/products/databook/tr/pdf/umx1n.pdf</description>
 <wire x1="195.58" y1="-24.13" x2="204.47" y2="-24.13" width="0.1524" layer="91"/>
 <pinref part="IC3" gate="A" pin="+IN"/>
 <wire x1="204.47" y1="-39.37" x2="214.63" y2="-39.37" width="0.1524" layer="91"/>
-<pinref part="C20" gate="G$1" pin="1"/>
-<wire x1="204.47" y1="-44.45" x2="204.47" y2="-39.37" width="0.1524" layer="91"/>
+<pinref part="C20" gate="G$1" pin="2"/>
+<wire x1="195.58" y1="-54.61" x2="204.47" y2="-54.61" width="0.1524" layer="91"/>
+<wire x1="204.47" y1="-54.61" x2="204.47" y2="-39.37" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$44" class="0">
@@ -16443,6 +16455,13 @@ Source: http://www.rohm.com/products/databook/tr/pdf/umx1n.pdf</description>
 <junction x="25.4" y="-67.945"/>
 <wire x1="25.4" y1="-67.945" x2="34.29" y2="-67.945" width="0.1524" layer="91"/>
 <pinref part="C24" gate="G$1" pin="2"/>
+</segment>
+</net>
+<net name="N$12" class="0">
+<segment>
+<pinref part="RESI" gate="1" pin="P"/>
+<pinref part="R39" gate="G$1" pin="1"/>
+<wire x1="142.24" y1="-59.69" x2="152.4" y2="-59.69" width="0.1524" layer="91"/>
 </segment>
 </net>
 </nets>

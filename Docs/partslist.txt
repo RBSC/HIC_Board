@@ -1,9 +1,8 @@
 Partlist
-
-Assembly variant: 
+--------
 
 Part     Value          Device               Package      Library         Sheet
--------------------------------------------------------------------------------
+
 C1       1uF            C-EUC1210            C1210        rcl             1
 C2       100pF          C-EUC0805            C0805        rcl             1
 C3       100nF          C-EUC0805            C0805        rcl             1
@@ -23,13 +22,13 @@ C16      100nF          C-EUC0805            C0805        rcl             1
 C17      100nF          C-EUC0805            C0805        rcl             1
 C18      100nF          C-EUC0805            C0805        rcl             1
 C19      100nF          C-EUC0805            C0805        rcl             1
-C20      10nF           C-EUC0805            C0805        rcl             1
+C20      39pF           C-EUC0805            C0805        rcl             1
 C21      10nF           C-EUC0805            C0805        rcl             1
 C22      100nF          C-EUC0805            C0805        rcl             1
 C23      10uF           CPOL-EUSMCB          SMC_B        rcl             1
 C24      10nF           C-EUC0805            C0805        rcl             1
 IC1      CXA2075        CXA2075              SOP24        CXA2075M        1
-IC2      4069UBF        4069UBF              SO14         Toshiba 4069UBF 1             Alternative: 74HC04 + 68pF capacitor
+IC2      4069UBF        74HCT04D             SO14         74xx-eu         1
 IC3      LM358D         LM358D               SO08         linear          1
 IC4      FMW1A          FMW1A                SMT5         fmw1            1
 IC5      FMW1A          FMW1A                SMT5         fmw1            1
@@ -71,7 +70,8 @@ R31      820            R-EU_R0805           R0805        rcl             1
 R32      1M             R-EU_R0805           R0805        rcl             1
 R33      1k             R-EU_R0805           R0805        rcl             1
 R34      10k            R-EU_R0805           R0805        rcl             1
-R35      4.7k           R-EU_R0805           R0805        rcl             1             Optional (do not install)
+R35      4.7k           R-EU_R0805           R0805        rcl             1
 R36      1k             R-EU_R0805           R0805        rcl             1
 R37      1k             R-EU_R0805           R0805        rcl             1
 R38      1k             R-EU_R0805           R0805        rcl             1
+R39      0 Ohm/220k     R-EU_R0805           R0805        rcl             1

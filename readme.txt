@@ -1,7 +1,7 @@
 --------------------------------------------------------------------------------
-HIC Board version 1.0
-Copyright (c) 2021-2022 RBSC
-Last updated: 16.08.2022
+HIC Board version 1.2
+Copyright (c) 2021-2023 RBSC
+Last updated: 21.09.2023
 --------------------------------------------------------------------------------
 
 About
@@ -57,6 +57,9 @@ to be 74HC04 with 68pF capacitor added between pins 3 and 7 (GND). See the "74hc
 
 The optional resistor R35 should not be installed unless the cassette input circuit doesn't work as desired.
 
+Please note that R39 should be 0 Ohm resistor for all computers except for HB-F1XDJ. On that particular computer R39 should
+be 220k.
+
 
 Where to buy parts
 ------------------
@@ -82,8 +85,12 @@ IMPORTANT!
 ----------
 
 The board hasn't been tested on all available MSX2/MSX2+ computers that are listed above. So far, the board was proved to be working
-well on Panasonic A1 series computers. There's still no feedback from people who bought the HIC board kits for other computers. As
-a result, the project's status is WIP (work in progress).
+well on Panasonic A1 series computers, as well as on Sony F1-XV. There's still no feedback from some people who bought the HIC board
+kits for other computers. As a result, the project's status is still WIP (work in progress).
+
+The boards version 1.0 and 1.1 have an error that results in problems with PSG and FM sound on Sony HB-F1XDJ. The information on how
+to fix the problem with those boards can be found in the "v1_board_fix.jpg" image file. One trace needs to be cut, 2 pads need to be
+connected and C20 needs to be replaced with 39pF capacitor.
 
 The RBSC provides all the files and information for free, without any liability (see the disclaimer.txt file). The provided information,
 software or hardware must not be used for commercial purposes unless permitted by the RBSC. Producing a small amount of bare boards for
@@ -95,8 +102,8 @@ When the sources of the tools are used to create alternative projects, please al
 Contact information
 -------------------
 
-The members of RBSC group Tnt23, Wierzbowsky, Pyhesty, Ptero, GreyWolf, SuperMax and DJS3000 can be contacted via the group's e-mail
-address:
+The members of RBSC group Tnt23, Wierzbowsky, Pyhesty, Ptero, GreyWolf, SuperMax, VWarlock and DJS3000 can be contacted via the group's
+e-mail address:
 
 info@rbsc.su
 
